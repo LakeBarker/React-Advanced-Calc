@@ -1,39 +1,58 @@
-.container {
-  text-align: center;
-  margin-top: 10px;
+.wrapper {
+  width: 378px;
+  height: 600px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: grey;
+  background-image: linear-gradient(315deg, grey 0%, orange 74%);
 }
 
-.calc-container {
-  border: 1px solid #333;
-  border-radius: 2px;
-  display: inline-block;
-  background-color: #ddd;
+.screen {
+  height: 100px;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  background-color: darkgrey;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: white;
+  font-weight: bold;
+  box-sizing: border-box;
 }
 
-.calc-button {
-  width: 50px;
-  min-height: 40px;
-  color: #333;
-  background-color: #ccc;
+.buttonBox {
+  width: 100%;
+  max-width: 400px;
+  height: calc(100% - 110px);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 10px;
 }
 
-.width-2 {
-  width: 100px !important;
+button {
+  border: none;
+  background-color:darkgoldenrod;
+  font-size: 24px;
+  color:white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+  outline: none;
 }
 
-.calc-button-op {
-  color: #fff;
-  background-color: orange;
+button:hover {
+  background-color: darkorange;
 }
 
-.calc-button-top {
-  color: #333;
-  background-color: #aaa;
+.equals {
+  grid-column: 3/5;
+  background-color: brown;
 }
 
-.answer-box {
-  background-color: #333;
-  color: #fff;
-  text-align: right;
-  min-height: 90px;
+.equals:hover {
+  background-color: crimson;
 }
